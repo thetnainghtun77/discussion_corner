@@ -49,5 +49,19 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
+// Route for frontend
+Route::get('main','FrontendController@main');
+
+// Route for frontend
+Route::get('register','FrontendController@register');
+
+Route::get('showCategory','FrontendController@showCategory');
+
+Route::get('newpost','FrontendController@newpost')->name('newpost');
+
+Route::get('detailpost/{id}','FrontendController@detailPost')->name('detailpost');
+
+//Frontend
+Route::get('/frontend','FrontendController@main');
 
 
