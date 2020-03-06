@@ -29,7 +29,10 @@ class FrontendController extends Controller
 
     public function newPost($value='')
     {
-        return view('frontend.newpost');
+        $categories = Category::all();
+        
+        return view('frontend.newpost',compact('categories'));
+        // return view('frontend.newpost');
     }
 
     public function detailPost($id)

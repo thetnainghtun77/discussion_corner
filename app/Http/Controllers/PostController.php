@@ -24,7 +24,8 @@ class PostController extends Controller
     {
         $posts = Post::all();
         // $users = User::all();
-        return view('backend.posts.index',compact('posts'));
+        // return view('backend.posts.index',compact('posts'));
+        return view('frontend.main',compact('posts'));
     }
 
     /**
@@ -67,7 +68,7 @@ class PostController extends Controller
         // dd($user_id);
         $post->save();
 
-        return redirect()->route('posts.index');
+        return redirect()->route('main');
     }
 
     /**

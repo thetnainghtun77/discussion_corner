@@ -85,7 +85,7 @@
 								<a>{{$row->title}}</a>
 							</strong>
 						</h4>
-						<p class="dark-grey-text">{{$row->body}}
+						<p class="dark-grey-text">{!!$row->body!!}
 						</p>
 
 						<!-- Deep-orange -->

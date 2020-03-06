@@ -50,14 +50,14 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 // Route for frontend
-Route::get('main','FrontendController@main');
+Route::get('main','FrontendController@main')->name('main');
 
 // Route for frontend
 Route::get('register','FrontendController@register');
 
 Route::get('showCategory','FrontendController@showCategory');
 
-Route::get('newpost','FrontendController@newpost')->name('newpost');
+Route::get('newpost','FrontendController@newPost')->name('newpost');
 
 Route::get('detailpost/{id}','FrontendController@detailPost')->name('detailpost');
 
